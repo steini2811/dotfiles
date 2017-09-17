@@ -10,7 +10,6 @@ for DIR in ./*/
 do
     var=$(basename $DIR)
     if [ "${!var}" = "true" ]; then
-        echo "configuring $var"
         source "$var/module.sh"
     fi
 done;
