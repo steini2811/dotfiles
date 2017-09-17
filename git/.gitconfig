@@ -1,0 +1,18 @@
+[user]
+	name = Philip Steinbrecher
+	email = philip.steinbrecher@gmx.de
+[alias]
+	cm = commit --branch --status --verbose
+	st = status
+	pu = push
+	pl = pull
+	co = checkout
+	ba = branch -a
+	bd = branch -d
+	bdd = branch -D
+	cb = checkout -b
+[push]
+	default = simple
+[core]
+    autocrlf = input
+    editor = nvim
