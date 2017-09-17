@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-_symlink_file bash/test1 test1
+_symlink_file $dotfiles_root/bash/.bash_aliases ~/.bash_aliases
+_symlink_file $dotfiles_root/bash/.bash_logout ~/.bash_logout
+_symlink_file $dotfiles_root/bash/.bashrc ~/.bashrc
 
