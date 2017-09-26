@@ -75,3 +75,7 @@ _expect_two_arguments() {
     fi
 }
 
+available() {
+    hash "${1}" > /dev/null 2>&1
+}
+
