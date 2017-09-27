@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 source "util/logger.sh"
+source "util/functions.sh"
 
-if [ -e config.conf ]; then
+if [ ! -e config.conf ]; then
     cp util/config.std config.conf
     if [ $? -ne 0 ]; then
         _log_error "unable to create config file"
@@ -15,7 +16,6 @@ fi
 dotfiles_root=$(pwd)
 
 source "config.conf"
-source "util/functions.sh"
 
 for DIR in ./*/
 do
