@@ -79,11 +79,3 @@ available() {
     hash "${1}" > /dev/null 2>&1
 }
 
-isUbuntu() {
-    lsb_release -a > /dev/null 2>&1 | grep Ubuntu > /dev/null 2>&1
-}
-
-isRaspbian() {
-    lsb_release -a > /dev/null 2>&1 | grep Raspbian > /dev/null 2>&1
-}
-
