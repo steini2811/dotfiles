@@ -7,11 +7,11 @@ _symlink_file() {
     _expect_two_arguments "$@"
 
     if [ -L $2 ]; then
-	if [ "$(readlink -v -m $2)" != "$dotfiles_root/$1" ]; then
-	    _remove_existing_symlink $2
-	else
-	    _log_info "symlink already set correctly - skipping..."
-	    return
+        if [ "$(readlink -v -m $2)" != "$dotfiles_root/$1" ]; then
+            _remove_existing_symlink $2
+        else
+            _log_info "symlink already set correctly - skipping..."
+            return
         fi
     elif [ ! -L $2 ] && [ -e $2 ]; then
         _backup_file $2
