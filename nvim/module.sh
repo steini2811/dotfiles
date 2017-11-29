@@ -3,4 +3,5 @@ if ! available nvim; then
 fi
 
 _symlink_file $dotfiles_root/nvim/.vimrc ~/.vimrc
+_symlink_file $dotfiles_root/nvim/.vimrc ~/.config/nvim/init.vim
 
