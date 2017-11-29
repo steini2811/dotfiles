@@ -3,7 +3,6 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'LnL7/vim-nix'
 call plug#end()
 
 
