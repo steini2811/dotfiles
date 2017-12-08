@@ -1,5 +1,5 @@
 if ! available nvim; then
-    sudo apt install neovim
+    sudo apt install neovim -y
 fi
 
 _symlink_file $dotfiles_root/nvim/.vimrc ~/.vimrc
