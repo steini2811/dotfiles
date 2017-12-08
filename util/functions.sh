@@ -41,7 +41,7 @@ _backup_file() {
         _log_info "created backup directory $path"
     fi
 
-    mv -v $1 "$path/$1"
+    mv -v $1 "$path/$(basename $1)"
     if [ $? -ne 0 ]; then
         _log_error "unable to backup file - aborting..."
         _log_continue "file:\t$path/$1"
