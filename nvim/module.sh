@@ -3,6 +3,7 @@ if ! available nvim; then
 fi
 
 _symlink_file $dotfiles_root/nvim/.vimrc ~/.vimrc
+mkdir --parents ~/.config/nvim
 _symlink_file $dotfiles_root/nvim/.vimrc ~/.config/nvim/init.vim
 
 curl -Lso '~/.config/nvim/autoload/plug.vim' --create-dirs 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
