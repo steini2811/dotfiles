@@ -1,6 +1,6 @@
 [user]
 	name = Philip Steinbrecher
-	email = philip.steinbrecher@gmx.de
+	email = Steinbrp@students.uni-marburg.de
 [alias]
 	cm = commit --branch --status --verbose
 	st = status
@@ -14,5 +14,5 @@
 [push]
 	default = simple
 [core]
-    autocrlf = input
+    #autocrlf = false
     editor = nvim

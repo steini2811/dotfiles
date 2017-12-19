@@ -4,7 +4,7 @@ autoload -Uz promptinit
 promptinit
 prompt adam1
 
-setopt histignorealldups sharehistory auto_pushd pushd_ignore_dups append_history autocd
+setopt histignorealldups auto_pushd pushd_ignore_dups append_history autocd
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
@@ -44,10 +44,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # [[ -z $TMUX ]] && tmux
 
+export PATH=/usr/lib/dart/bin:$PATH
+
 # aliases
 alias def_aliases='nvim ~/.zshrc && source ~/.zshrc'
 alias sudo='nocorrect sudo '
-alias uni='cd ~/Dropbox/UNI/6.\ Semester/'
+alias uni='cd ~/Dropbox/UNI/7.\ Semester/'
 alias git='LANG=en_US git'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias dotupdate='~/dotfiles/update.sh'
