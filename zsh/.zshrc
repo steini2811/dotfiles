@@ -45,24 +45,25 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # [[ -z $TMUX ]] && tmux
 
 export PATH=/usr/lib/dart/bin:$PATH
+export LESSCHARSET=UTF-8
 
 # aliases
 alias def_aliases='nvim ~/.zshrc && source ~/.zshrc'
 alias sudo='nocorrect sudo '
 alias uni='cd ~/Dropbox/UNI/7.\ Semester/'
 alias git='LANG=en_US git'
-alias update='sudo apt update && sudo apt upgrade -y'
+alias update='sudo apt update && sudo apt upgrade -y && sudo apt autoclean && sudo apt autoremove -y'
 alias dotupdate='~/dotfiles/update.sh'
 alias dwm='sudo service lightdm restart'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias win10='virtualbox --startvm Win10x86 &'
+alias win10='virtualbox --startvm Win10 &'
 alias pihdd='cd /run/user/1000/gvfs/smb-share:server=raspi,share=pi-share'
 alias eclipse='nohup /opt/eclipse/java-oxygen/eclipse/eclipse 2>&1 >/dev/null &'
 
 function open() {
-    xdg-open "$1" 2>&1 >/dev/null
+    xdg-open "$1" > /dev/null 2>&1
 }
 
 # enable color support of ls and also add handy aliases
@@ -78,7 +79,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -AFhlv'
+alias ll='ls -AFhl' #AFhlv
 alias la='ls -A'
 alias l='ls -CF'
 

@@ -16,3 +16,5 @@
 [core]
     #autocrlf = false
     editor = nvim
+[fetch]
+    prune = true
