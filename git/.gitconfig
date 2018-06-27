@@ -1,18 +1,20 @@
 [user]
-	name = Philip Steinbrecher
-	email = Steinbrp@students.uni-marburg.de
+    name = Philip Steinbrecher
+    email = Steinbrp@students.uni-marburg.de
 [alias]
-	cm = commit --branch --status --verbose
-	st = status
-	pu = push
-	pl = pull
-	co = checkout
-	ba = branch -a
-	bd = branch -d
-	bdd = branch -D
-	cb = checkout -b
+    cm = commit --branch --status --verbose
+    st = status
+    pu = push
+    pdo = push -d origin
+    pd = push -d
+    pl = pull
+    co = checkout
+    ba = branch -a
+    bd = branch -d
+    bdd = branch -D
+    cb = checkout -b
 [push]
-	default = simple
+    default = simple
 [core]
     #autocrlf = false
     editor = nvim
