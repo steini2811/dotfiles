@@ -9,6 +9,7 @@
     pd = push -d
     pl = pull
     co = checkout
+    mma = merge master
     ba = branch -a
     bd = branch -d
     bdd = branch -D
