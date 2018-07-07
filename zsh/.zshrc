@@ -56,6 +56,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias pihdd='cd /run/user/1000/gvfs/smb-share:server=raspi,share=pi-share'
+alias hibernate='bash ~/dotfiles/scripts/hibernate.sh'
 
 function open() {
     xdg-open "$1" > /dev/null 2>&1
