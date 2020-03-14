@@ -21,3 +21,5 @@
     editor = nvim
 [fetch]
     prune = true
+[merge "ours"]
+	driver = true
