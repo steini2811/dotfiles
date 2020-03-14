@@ -1,6 +1,6 @@
 [user]
     name = Philip Steinbrecher
-    email = Steinbrp@students.uni-marburg.de
+    email = philip.steinbrecher@gmx.de
 [alias]
     cm = commit --branch --status --verbose
     st = status
